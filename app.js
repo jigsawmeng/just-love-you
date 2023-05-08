@@ -121,8 +121,8 @@ App({
   globalData: {
     musicChecked: false,
     userInfo: null,
-    AppSecret: "15c64cf479b10f5c2e59ec17141b85e3",
-    AppID: "wx0f300f9225e216f7",
+    // AppSecret: "15c64cf479b10f5c2e59ec17141b85e3",
+    // AppID: "wx0f300f9225e216f7",
     openid: null,
     access_token: null,
   },

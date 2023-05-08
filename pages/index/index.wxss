@@ -1,6 +1,6 @@
 /**index.wxss**/
 .container {
-  font-size: 25px;
+  font-size: 25rpx;
   color: blueviolet;
   font-weight: 600;
 }
@@ -8,24 +8,24 @@
   margin-top: 50rpx;
 }
 .love-divide {
-  border-top: 1px solid #dda0dd;
-  margin: 20rpx -7rpx;
+  border-top: 1rpx solid #dda0dd;
+  margin: 15rpx -7rpx;
 }
 .love-wrap {
   margin-top: 35rpx;
-  padding: 15px 55px;
+  padding: 15rpx 60rpx;
   text-align: center;
   background-color: rgba(255, 248, 220, 0.65);
-  border-radius: 8px;
+  border-radius: 8rpx;
 }
 .love-day-1 {
-  font-size: 18px;
+  font-size: 34rpx;
 }
 .love-day-2 {
-  font-size: 28px;
+  font-size: 48rpx;
   font-weight: 600;
   color: #a066d3;
-  padding: 0 6px;
+  padding: 0 6rpx;
 }
 .address-wrap {
   display: flex;
@@ -43,6 +43,7 @@
   height: 60rpx;
 }
 .weather-icon {
+  margin-top: 15rpx;
   width: 80rpx;
   height: 80rpx;
 }
@@ -50,7 +51,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 15px 0;
+  padding: 15rpx 0;
   text-align: center;
   background-image: linear-gradient(
     rgba(255, 248, 220, 0.8),

@@ -9,7 +9,7 @@
           <image src="/image/local1.png" class="address-icon"></image>
           <text wx:if="{{address}}" class="address">{{address}}</text>
         </view>
-        <view>{{weatherTemp}}℃   {{weatherText}}</view>
+        <view style="font-size: 32rpx">{{weatherTemp}}℃   {{weatherText}}</view>
         <image wx:if="{{weatherIcon}}" src="/image/weather-icons/{{weatherIcon}}.svg" class='weather-icon'></image>
         <view class="weather-detail">
           <view class="weather-bar mt-15">
