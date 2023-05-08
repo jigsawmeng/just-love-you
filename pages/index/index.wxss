@@ -1,1 +1,74 @@
 /**index.wxss**/
+.container {
+  font-size: 25px;
+  color: blueviolet;
+  font-weight: 600;
+}
+.love-container {
+  margin-top: 50rpx;
+}
+.love-divide {
+  border-top: 1px solid #dda0dd;
+  margin: 20rpx -7rpx;
+}
+.love-wrap {
+  margin-top: 35rpx;
+  padding: 15px 55px;
+  text-align: center;
+  background-color: rgba(255, 248, 220, 0.65);
+  border-radius: 8px;
+}
+.love-day-1 {
+  font-size: 18px;
+}
+.love-day-2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #a066d3;
+  padding: 0 6px;
+}
+.address-wrap {
+  display: flex;
+  margin-bottom: 10rpx;
+  justify-content: center;
+}
+.address {
+  font-size: 32rpx;
+  color: #3d59ab;
+  line-height: 60rpx;
+  margin-left: 15rpx;
+}
+.address-icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+.weather-icon {
+  width: 80rpx;
+  height: 80rpx;
+}
+.weather-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  background-image: linear-gradient(
+    rgba(255, 248, 220, 0.8),
+    rgba(255, 248, 220, 0.2)
+  );
+}
+.weather-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.weather-bar {
+  width: 100%;
+  font-size: 36rpx;
+  display: flex;
+  flex-direction: row;
+}
+.weather-box {
+  width: 33.3%;
+  text-align: center;
+}

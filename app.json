@@ -1,13 +1,43 @@
 {
     "pages": [
-        "pages/index/index"
+        "pages/index/index",
+        "pages/partner/partner"
     ],
+    "tabBar": {
+      "color": "black",
+      "selectedColor": "#ff4400",
+      "list": [{
+        "pagePath": "pages/index/index",
+        "text": "Lover",
+        "iconPath": "/image/lover.png",
+        "selectedIconPath": "/image/lover_red.png"
+      },
+      {
+        "pagePath": "pages/partner/partner",
+        "text": "Memory",
+        "iconPath": "/image/memory.png",
+        "selectedIconPath": "/image/memory_red.png"
+      }
+    ]
+    },
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "JLU",
-        "navigationBarTextStyle": "black"
+        "navigationBarBackgroundColor": "#ff4400",
+        "navigationBarTitleText": "Just Love You",
+        "navigationBarTextStyle": "white"
     },
     "style": "v2",
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "requiredBackgroundModes": ["audio", "location"],
+    "requiredPrivateInfos":[
+      "getLocation",
+      "choosePoi",
+      "chooseAddress"
+    ],
+    "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序获取当前位置的天气情况"
+    }
+  }
 }

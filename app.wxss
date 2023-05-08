@@ -5,6 +5,62 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
+  padding: 0 0;
   box-sizing: border-box;
 } 
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2f4f4f;
+}
+
+.info-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.bg-image {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.music {
+  width: 86rpx;
+  height: 86rpx;
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+  z-index: 99;
+}
+
+.circle {
+  animation: cirlce 4s linear infinite;
+}
+
+@keyframes cirlce {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.color-1 {
+  color: #A066D3;
+}
+.mt-15 {
+  margin-top: 15rpx;
+}
+.mt-6 {
+  margin-top: 6rpx;
+}
+.font-40 {
+  font-size: 40rpx;
+}

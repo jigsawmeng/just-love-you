@@ -1,4 +1,49 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
-  Weixin
+  <view class="info">
+    <image class="bg-image" src="http://ru6o93pv8.hn-bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230505174407.jpg" mode="cover"></image>
+    <image src="/image/music.png" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image>
+    <view class="weather-wrap">
+      <view class="" style="width: 70%">
+        <view class="address-wrap">
+          <image src="/image/local1.png" class="address-icon"></image>
+          <text wx:if="{{address}}" class="address">{{address}}</text>
+        </view>
+        <view>{{weatherTemp}}℃   {{weatherText}}</view>
+        <image wx:if="{{weatherIcon}}" src="/image/weather-icons/{{weatherIcon}}.svg" class='weather-icon'></image>
+        <view class="weather-detail">
+          <view class="weather-bar mt-15">
+            <view class="weather-box">湿度</view>
+            <view class="weather-box">风向</view>
+            <view class="weather-box">风力</view>
+          </view>
+          <view class="weather-bar mt-6">
+            <view class="weather-box font-40 color-1">{{weatherHumidity}}%</view>
+            <view class="weather-box font-40 color-1">{{weatherWindDir}}</view>
+            <view class="weather-box font-40 color-1">{{weatherWindScale}} 级</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+      <view class="love-wrap" hover-class="none" hover-stop-propagation="false">
+        <view class="">
+          <text class="love-day-1">我们已经在一起</text>
+          <text class="love-day-2">{{ loveDayDistance }}</text>
+          <text class="love-day-1">天啦</text>
+          <view class="love-divide"></view>
+          <view class="love-day-1">{{loveDay}}</view>
+        </view>
+      </view>
+      <view class="love-wrap" hover-class="none" hover-stop-propagation="false">
+        <view class="">
+          <text class="love-day-1">距离下一次见面还有</text>
+          <text class="love-day-2">{{ nextDayDistance }}</text>
+          <text class="love-day-1">天</text>
+          <view class="love-divide"></view>
+          <view class="love-day-1">{{nextDay}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
