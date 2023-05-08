@@ -1,1 +1,101 @@
 /**index.wxss**/
+.listview-container {
+  width: 100%;
+  padding: 15rpx 60rpx;
+  background-image: linear-gradient(
+    rgba(255, 248, 220, 1),
+    rgba(0, 199, 140, 0.5)
+  );
+}
+
+/*行样式*/
+.playlog-item {
+  display: flex;
+  margin-top: 20rpx;
+}
+/*时间轴*/
+.playlog-item .dotline {
+  width: 100rpx;
+  position: relative;
+}
+
+/*竖线*/
+.playlog-item .dotline .line {
+  width: 4rpx;
+  height: calc(100% - 84rpx);
+  background: #3d59ab;
+  position: absolute;
+  top: 81rpx;
+  left: 42rpx;
+}
+
+/*圆点*/
+.playlog-item .dotline .dot {
+  width: 20rpx;
+  height: 20rpx;
+  background: #0b1746;
+  position: absolute;
+  top: 10rpx;
+  left: 33rpx;
+  border-radius: 50%;
+}
+
+/*时间戳*/
+.playlog-item .dotline .time {
+  width: 100%;
+  position: absolute;
+  margin-top: 30rpx;
+  z-index: 99;
+  font-size: 12rpx;
+  color: #777;
+  text-align: center;
+}
+
+/*右侧主体内容*/
+.playlog-item .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border-bottom: 1rpx solid #ddd; */
+  margin: 3rpx 0;
+}
+
+/*章节部分*/
+.playlog-item .content .chapter {
+  font-size: 30rpx;
+  line-height: 68rpx;
+  color: #444;
+  white-space: normal;
+  padding-right: 10rpx;
+}
+
+/*课程部分*/
+.playlog-item .content .course {
+  font-size: 32rpx;
+  line-height: 60rpx;
+  color: #0B1746;
+  margin-bottom: 20rpx;
+  font-weight: 600;
+}
+.airplane {
+  width: 86rpx;
+  height: 86rpx;
+  position: fixed;
+  /* top: 0rpx; */
+  top: 100%;
+  left: 0rpx;
+  z-index: 99;
+  transform: rotate(180deg);
+  animation: falling 30s linear infinite;
+}
+@keyframes falling {
+  0% {
+    top: 0rpx;
+  }
+  100% {
+    top: 100%;
+  }
+}
+.memory-pic {
+  width: 530rpx;
+}

@@ -33,7 +33,7 @@
 .music {
   width: 86rpx;
   height: 86rpx;
-  position: absolute;
+  position: fixed;
   bottom: 30rpx;
   right: 30rpx;
   z-index: 99;
@@ -63,4 +63,18 @@
 }
 .font-40 {
   font-size: 40rpx;
+}
+.dalian-icon {
+  width: 77rpx;
+  height: 77rpx;
+  position: relative;
+  left: 5rpx;
+  top: -9rpx;
+}
+.shanghai-icon {
+  width: 66rpx;
+  height: 66rpx;
+  position: relative;
+  left: 11rpx;
+  top: -2rpx;
 }

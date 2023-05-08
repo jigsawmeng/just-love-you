@@ -2,6 +2,25 @@ const app = getApp();
 Page({
   data: {
     checked: app.globalData.musicChecked,
+    memoryList: [
+      {
+        time: "2023/02/04",
+        picture: "230204",
+        address: "shanghai",
+      },
+      {
+        time: "2023/02/10",
+        picture: "230211",
+        address: "dalian",
+      },
+      { time: "2023/02/24", picture: "230225", address: "shanghai" },
+      { time: "2023/03/03", picture: "230304", address: "dalian" },
+      { time: "2023/03/10", picture: "230311", address: "dalian" },
+      { time: "2023/03/24", picture: "230325", address: "dalian" },
+      { time: "2023/04/07", picture: "230408", address: "shanghai" },
+      { time: "2023/04/14", picture: "230416", address: "dalian" },
+      { time: "2023/04/29", picture: "230501", address: "shanghai" },
+    ],
   },
   onShow() {
     this.setData({
