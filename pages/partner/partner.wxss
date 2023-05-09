@@ -1,10 +1,10 @@
 /**index.wxss**/
 .listview-container {
   width: 100%;
-  padding: 15rpx 60rpx;
+  padding: 10rpx 0;
   background-image: linear-gradient(
     rgba(255, 248, 220, 1),
-    rgba(0, 199, 140, 0.5)
+    rgba(0, 199, 140, 0.55)
   );
 }
 
@@ -86,7 +86,7 @@
   left: 0rpx;
   z-index: 99;
   transform: rotate(180deg);
-  animation: falling 30s linear infinite;
+  animation: falling 40s linear infinite;
 }
 @keyframes falling {
   0% {
@@ -98,4 +98,5 @@
 }
 .memory-pic {
   width: 530rpx;
+  border-radius: 8rpx;
 }

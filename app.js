@@ -101,7 +101,7 @@ App({
   },
   player(e) {
     e.title = "just love you";
-    e.src = "http://music.163.com/song/media/outer/url?id=475479888.mp3";
+    e.src = "http://music.163.com/song/media/outer/url?id=740530.mp3";
     //音乐播放结束后继续播放此音乐，循环不停的播放
     e.onEnded(() => {
       this.player(wx.getBackgroundAudioManager());

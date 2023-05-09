@@ -1,28 +1,35 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/partner/partner"
+        "pages/partner/partner",
+        "pages/funny/funny"
     ],
     "tabBar": {
       "color": "black",
-      "selectedColor": "#ff4400",
+      "selectedColor": "#C20C0C",
       "list": [{
         "pagePath": "pages/index/index",
         "text": "Lover",
         "iconPath": "/image/lover.png",
-        "selectedIconPath": "/image/lover_red.png"
+        "selectedIconPath": "/image/lover_red1.png"
       },
       {
         "pagePath": "pages/partner/partner",
         "text": "Memory",
         "iconPath": "/image/memory.png",
-        "selectedIconPath": "/image/memory_red.png"
+        "selectedIconPath": "/image/memory_red1.png"
+      },
+      {
+        "pagePath": "pages/funny/funny",
+        "text": "Funny",
+        "iconPath": "/image/game.png",
+        "selectedIconPath": "/image/game_red.png"
       }
     ]
     },
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#ff4400",
+        "navigationBarBackgroundColor": "#242424",
         "navigationBarTitleText": "Just Love You",
         "navigationBarTextStyle": "white"
     },

@@ -4,6 +4,13 @@
     <view class="love-container" hover-class="none" hover-stop-propagation="false">
       <image src="/image/music.png" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image>
     </view>
+    <!-- <swiper style="width: 100%" indicator-dots="true" autoplay="true" interval="5000" duration="500">
+      <block wx:for="{{memoryList}}" wx:key="time">
+        <swiper-item>
+          <image src="http://ru6o93pv8.hn-bkt.clouddn.com/{{item.picture}}.jpg" class="memory-pic" mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper> -->
     <view class="listview-container">
       <image src="/image/airplane1.png" class="airplane" mode="cover"></image>
       <block wx:for="{{memoryList}}" wx:key="index">

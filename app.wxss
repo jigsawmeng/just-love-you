@@ -78,3 +78,12 @@
   left: 11rpx;
   top: -2rpx;
 }
+.btn-box button {
+  width: 180rpx !important;
+  height: 80rpx;
+  background-color: #242424;
+  color: aliceblue;
+  font-size: 30rpx;
+  padding: 6rpx 12rpx !important;
+  line-height: 68rpx !important;
+}
