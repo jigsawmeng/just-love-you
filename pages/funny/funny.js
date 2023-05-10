@@ -14,6 +14,7 @@ Page({
       score: 0,
       gameOver: false,
       chanceBoard: [],
+      chanceSelected: [],
     });
     this.initGame();
   },

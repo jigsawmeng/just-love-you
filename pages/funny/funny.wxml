@@ -6,7 +6,7 @@
   <view class="game-board">
     <block wx:for="{{board}}" wx:for-item="item" wx:key="index">
       <view class="game-cell {{item.value === 0 && 'game-cell-removeed'}}" bindtap="tapCell" data-row="{{item.row}}" data-col="{{item.col}}" data-index="{{item.index}}" data-value="{{item.value}}">
-        <image class="{{selected[0].index === index && 'game-cell-selected'}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/game{{item.value}}.jpg"></image>
+        <image wx:if="{{item.value}}" class="{{selected[0].index === index && 'game-cell-selected'}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/game{{item.value}}.jpg"></image>
       </view>
     </block>
   </view>
