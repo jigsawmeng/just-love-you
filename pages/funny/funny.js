@@ -5,16 +5,38 @@ Page({
     selected: [],
     score: 0,
     gameOver: false,
+    chanceBoard: [],
+    chanceSelected: [],
   },
   reStart: function () {
     this.setData({
       selected: [],
       score: 0,
       gameOver: false,
+      chanceBoard: [],
     });
     this.initGame();
   },
   initGame() {
+    let board = [];
+    board = this.createBoard();
+    let chanceBoard = [];
+    let singleValue = this.findSingles(board);
+    while (singleValue.length > 3) {
+      board = this.createBoard();
+      singleValue = this.findSingles(board);
+    }
+    for (let index = 0; index < 3; index++) {
+      if (singleValue[index]) {
+        chanceBoard.push(singleValue[index]);
+      } else {
+        let value = Math.floor(Math.random() * 10) + 1;
+        chanceBoard.push(value);
+      }
+    }
+    this.setData({ board: board, chanceBoard: chanceBoard });
+  },
+  createBoard: function () {
     let board = [];
     for (let i = 0; i < 25; i++) {
       let row = Math.floor(i / 5);
@@ -22,21 +44,73 @@ Page({
       let value = Math.floor(Math.random() * 10) + 1;
       board.push({ row: row, col: col, value: value, index: i });
     }
-    // let index1 = Math.floor(Math.random() * 25);
-    // let index2 = Math.floor(Math.random() * 25);
-    // while (index2 === index1 || board[index1].value !== board[index2].value) {
-    //   index2 = Math.floor(Math.random() * 25);
-    // }
-    // let temp = board[index1].value;
-    // board[index1].value = board[index2].value;
-    // board[index2].value = temp;
+    return board;
+  },
+  findSingles: function (arr) {
+    let singles = [];
+    let counts = {};
 
-    this.setData({ board: board });
+    for (let i = 0; i < arr.length; i++) {
+      let num = arr[i].value;
+      counts[num] = counts[num] ? counts[num] + 1 : 1;
+    }
+
+    for (let num in counts) {
+      if (counts[num] % 2 === 1) {
+        singles.push(Number(num));
+      }
+    }
+    return singles;
   },
   onLoad: function () {
     this.initGame();
   },
-
+  chanceCell(event) {
+    let chanceValue = event.currentTarget.dataset;
+    if (this.data.chanceSelected.length !== 0) {
+      if (
+        chanceValue.value === this.data.chanceSelected[0].value &&
+        chanceValue.index !== this.data.chanceSelected[0].index
+      ) {
+        let chanceBoard = this.data.chanceBoard;
+        chanceBoard[chanceValue.index] = 0;
+        chanceBoard[this.data.chanceSelected[0].index] = 0;
+        this.setData({
+          chanceSelected: [],
+          chanceBoard: chanceBoard,
+          score: this.data.score + 10,
+        });
+      } else {
+        this.setData({
+          chanceSelected: [],
+        });
+      }
+      return;
+    }
+    if (this.data.selected.length === 0) {
+      this.setData({
+        chanceSelected: [chanceValue],
+      });
+    } else {
+      if (chanceValue.value === this.data.selected[0].value) {
+        const { row, col } = this.data.selected[0];
+        let board = this.data.board;
+        board[row * 5 + col].value = 0;
+        const chanceBoard = this.data.chanceBoard;
+        chanceBoard[chanceValue.index] = 0;
+        this.onSuccess(board);
+        this.setData({
+          chanceSelected: [],
+          chanceBoard: chanceBoard,
+        });
+      } else {
+        this.setData({
+          selected: [],
+          chanceSelected: [],
+        });
+      }
+    }
+  },
   tapCell: function (event) {
     if (this.data.gameOver) {
       return;
@@ -45,6 +119,25 @@ Page({
     let col = event.currentTarget.dataset.col;
     let value = event.currentTarget.dataset.value;
     let index = event.currentTarget.dataset.index;
+    if (this.data.chanceSelected.length !== 0) {
+      if (this.data.chanceSelected[0].value === value) {
+        let board = this.data.board;
+        board[row * 5 + col].value = 0;
+        const chanceBoard = this.data.chanceBoard;
+        chanceBoard[this.data.chanceSelected[0].index] = 0;
+        this.onSuccess(board);
+        this.setData({
+          chanceSelected: [],
+          chanceBoard: chanceBoard,
+        });
+      } else {
+        this.setData({
+          selected: [],
+          chanceSelected: [],
+        });
+      }
+      return;
+    }
     if (this.data.selected.length === 0) {
       this.setData({
         selected: [{ row: row, col: col, value: value, index: index }],
@@ -53,6 +146,9 @@ Page({
     }
     let last = this.data.selected[0];
     if (last.row === row && last.col === col) {
+      this.setData({
+        selected: [],
+      });
       return;
     }
     if (last.value !== value) {
@@ -63,11 +159,7 @@ Page({
       let board = this.data.board;
       board[last.row * 5 + last.col].value = 0;
       board[row * 5 + col].value = 0;
-      this.setData({
-        board: board,
-        selected: [],
-        score: this.data.score + 10,
-      });
+      this.onSuccess(board);
       // if (this.isGameOver()) {
       //   this.setData({ gameOver: true });
       //   wx.showModal({
@@ -82,6 +174,13 @@ Page({
         selected: [],
       });
     }
+  },
+  onSuccess: function (board) {
+    this.setData({
+      board: board,
+      selected: [],
+      score: this.data.score + 10,
+    });
   },
 
   canConnect: function (cell1, cell2) {
@@ -166,7 +265,6 @@ Page({
     return false;
   },
   canConnectWithTwoCorners: function (cell1, cell2, board) {
-    const array = board;
     const x1 = cell1.col;
     const y1 = cell1.row;
     const x2 = cell2.col;

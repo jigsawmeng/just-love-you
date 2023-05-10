@@ -61,8 +61,17 @@
 .mt-6 {
   margin-top: 6rpx;
 }
-.font-40 {
-  font-size: 40rpx;
+.mt-40 {
+  margin-top: 40rpx;
+}
+.font-48 {
+  font-size: 48rpx;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.color-2 {
+  color: #C20C0C;
 }
 .dalian-icon {
   width: 77rpx;

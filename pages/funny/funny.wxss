@@ -15,13 +15,11 @@
   display: flex;  
   flex-wrap: wrap;  
   text-align: center;
-  width: 600rpx;  
-  height: 600rpx;  
-  /* border: 1px solid #ccc;   */
+  width: 570rpx;  
+  height: 570rpx;  
   margin-top: 20rpx; 
   justify-content: center; 
 }  
-  
 .game-cell {  
   width: 100rpx;  
   height: 100rpx;  
@@ -30,33 +28,38 @@
   margin: 7rpx;
   border-radius: 10rpx;
 }  
-
 .game-cell-selected {
   animation: bigger 0.3s ease-out;
   animation-iteration-count: 1;
-  animation: ;
-  transform: scale(1.1);
+  transform: scale(0.9);
 } 
 @keyframes bigger {
   0% {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(0.9);
   }
 }
-
-
+.game-chance-wrap {
+  display: flex;
+  margin-top: 30rpx;
+  flex-direction: row;
+}
+.game-chance {
+  margin: 12rpx 30rpx;
+  padding: 4rpx;
+  background-color: #F0FFFF; 
+  box-shadow: 3rpx 4rpx 10rpx 0 rgba(0, 0, 0, 0.2);
+}
 .game-cell-removeed {
   background-color: #DCDCDC;
 } 
-
 .game-cell image {  
   width: 100%;  
   height: 100%;  
   border-radius: 10rpx;  
 }  
-  
 .game-cell .highlight {  
   position: absolute;  
   top: 0;  
