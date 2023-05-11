@@ -29,7 +29,7 @@
   border-radius: 10rpx;
 }  
 .game-cell-selected {
-  animation: bigger 0.3s ease-out;
+  animation: bigger 0.2s ease-out;
   animation-iteration-count: 1;
   transform: scale(0.9);
 } 

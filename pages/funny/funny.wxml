@@ -13,12 +13,12 @@
   <view class="game-chance-wrap">
     <block wx:for="{{chanceBoard}}" wx:for-item="item" wx:key="index">
       <view class="game-cell game-chance {{item === 0 && 'game-cell-removeed'}}" bindtap="chanceCell" data-index="{{index}}" data-value="{{item}}">
-        <image class="{{chanceSelected[0].index === index && 'game-cell-selected'}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/game{{item}}.jpg"></image>
+        <image wx:if="{{item}}" class="{{chanceSelected[0].index === index && 'game-cell-selected'}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/game{{item}}.jpg"></image>
       </view>
     </block>
   </view>
   <view class="btn-box">
     <button class="btn" bindtap="reStart">重新开始</button>
   </view>
-  <view wx:if="{{score === 140}}" class="font-48  font-weight-600  color-2 mt-40">恭喜你成功啦！！！</view>
+  <view wx:if="{{score === 140}}" class="font-48 font-weight-600 color-3 mt-60">永远年轻，永远浪漫</view>
 </view>

@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding: 0 0;
   box-sizing: border-box;
-} 
+}
 .info {
   width: 100%;
   display: flex;
@@ -53,7 +53,7 @@
   }
 }
 .color-1 {
-  color: #A066D3;
+  color: #a066d3;
 }
 .mt-15 {
   margin-top: 15rpx;
@@ -61,8 +61,8 @@
 .mt-6 {
   margin-top: 6rpx;
 }
-.mt-40 {
-  margin-top: 40rpx;
+.mt-60 {
+  margin-top: 60rpx;
 }
 .font-48 {
   font-size: 48rpx;
@@ -71,14 +71,17 @@
   font-weight: 600;
 }
 .color-2 {
-  color: #C20C0C;
+  color: #c20c0c;
+}
+.color-3 {
+  color: #242424;
 }
 .dalian-icon {
-  width: 77rpx;
-  height: 77rpx;
+  width: 81rpx;
+  height: 81rpx;
   position: relative;
-  left: 5rpx;
-  top: -9rpx;
+  left: 3rpx;
+  top: -11rpx;
 }
 .shanghai-icon {
   width: 66rpx;
@@ -95,4 +98,41 @@
   font-size: 30rpx;
   padding: 6rpx 12rpx !important;
   line-height: 68rpx !important;
+}
+.game-success-font {
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+.game-success-font:before {
+  content: "";
+  position: absolute;
+  left: 150rpx;
+  width: 20rpx;
+  height: 0rpx;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 3, 20, 0.8) 0%,
+    rgba(16, 3, 20, 0.2) 50%,
+    rgba(0, 199, 140, 0.5) 60%,
+    rgba(0, 199, 140, 0.1) 100%
+  );
+  animation: toright 3s linear forwards;
+  animation-delay: 2s;
+}
+@keyframes toright {
+  0% {
+    left: 150rpx;
+    height: 65rpx;
+  }
+  /* 90% {
+    left: 590rpx;
+    height: 65rpx;
+  } */
+  95% {
+    left: 590rpx;
+    height: 65rpx;
+  }
+  100% {
+    left: 590rpx;
+    height: 0rpx;
+  }
 }
