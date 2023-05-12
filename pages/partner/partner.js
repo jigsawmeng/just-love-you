@@ -34,8 +34,8 @@ Page({
       {
         time: "2023/03/10",
         picture: "230311",
-        address: "dalian",
-        iconClass: "dalian-icon",
+        address: "jlu",
+        iconClass: "jlu-icon",
         description: "JLU，Just Love You...",
       },
       {

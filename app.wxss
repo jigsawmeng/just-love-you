@@ -96,6 +96,14 @@
   left: 11rpx;
   top: -2rpx;
 }
+.jlu-icon {
+  width: 66rpx;
+  height: 66rpx;
+  position: relative;
+  left: 11rpx;
+  top: -2rpx;
+  border-radius: 33rpx;
+}
 .btn-box button {
   width: 180rpx !important;
   height: 80rpx;
