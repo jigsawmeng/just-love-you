@@ -64,8 +64,14 @@
 .mt-60 {
   margin-top: 60rpx;
 }
-.font-48 {
-  font-size: 48rpx;
+.mb-30 {
+  margin-bottom: 30rpx;
+}
+.mb-40 {
+  margin-bottom: 40rpx;
+}
+.font-42 {
+  font-size: 42rpx;
 }
 .font-weight-600 {
   font-weight: 600;
@@ -74,7 +80,7 @@
   color: #c20c0c;
 }
 .color-3 {
-  color: #242424;
+  color: #FFF5EE;
 }
 .dalian-icon {
   width: 81rpx;
@@ -98,41 +104,4 @@
   font-size: 30rpx;
   padding: 6rpx 12rpx !important;
   line-height: 68rpx !important;
-}
-.game-success-font {
-  /* font-family: "Lucida Console", "Courier New", monospace; */
-}
-.game-success-font:before {
-  content: "";
-  position: absolute;
-  left: 150rpx;
-  width: 20rpx;
-  height: 0rpx;
-  background: linear-gradient(
-    90deg,
-    rgba(16, 3, 20, 0.8) 0%,
-    rgba(16, 3, 20, 0.2) 50%,
-    rgba(0, 199, 140, 0.5) 60%,
-    rgba(0, 199, 140, 0.1) 100%
-  );
-  animation: toright 3s linear forwards;
-  animation-delay: 2s;
-}
-@keyframes toright {
-  0% {
-    left: 150rpx;
-    height: 65rpx;
-  }
-  /* 90% {
-    left: 590rpx;
-    height: 65rpx;
-  } */
-  95% {
-    left: 590rpx;
-    height: 65rpx;
-  }
-  100% {
-    left: 590rpx;
-    height: 0rpx;
-  }
 }

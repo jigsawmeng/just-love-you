@@ -52,33 +52,12 @@ Page({
       },
     });
   },
-  messageSend() {
-    let now = new Date(); // 获取当前时间
-    let firstTime = new Date(
-      now.getFullYear(),
-      now.getMonth(),
-      now.getDate(),
-      11,
-      1,
-      0
-    ); // 获取今天八点的时间
-    let diff = firstTime.getTime() - now.getTime(); // 计算距离下一个八点的时间差
-
-    // 如果距离下一个八点的时间已经过去了，则将时间差设置为明天八点的时间
-    if (diff < 0) {
-      diff += 24 * 60 * 60 * 1000;
-    }
-    setInterval(function () {
-      // this.runTask();
-      console.log("***********************");
-    }, diff); // 设置定时器，每隔 diff 毫秒执行一次 runTask() 函数
-  },
   onShow() {
     const loveDay = this.data.loveDay;
     const nextDay = this.data.nextDay;
 
     const day1 = this.getDiffDay(new Date(), new Date(loveDay));
-    const day2 = this.getDiffDay(new Date(), new Date(nextDay));
+    const day2 = this.getDiffDay1(new Date(), new Date(nextDay));
     this.setData({
       checked: app.globalData.musicChecked,
       loveDayDistance: day1,
@@ -90,6 +69,13 @@ Page({
     diffDate = Math.abs(date_1 - date_2);
 
     totalDays = Math.ceil(diffDate / (1000 * 3600 * 24));
+    return totalDays; // 相差的天数
+  },
+  getDiffDay1(date_1, date_2) {
+    let totalDays, diffDate;
+    diffDate = Math.abs(date_1 - date_2);
+
+    totalDays = Math.floor(diffDate / (1000 * 3600 * 24));
     return totalDays; // 相差的天数
   },
   checkMusic() {

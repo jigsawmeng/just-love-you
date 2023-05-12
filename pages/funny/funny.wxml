@@ -17,8 +17,14 @@
       </view>
     </block>
   </view>
-  <view class="btn-box">
+  <view wx:if="{{score === 140}}" class="success-wrap font-42 font-weight-600 color-3">
+    <image class="chidouren-icon" src="/image/chidouren.png"></image>
+    <image class="yanhua-icon" src="http://ru6o93pv8.hn-bkt.clouddn.com/yanhua.png"></image>
+    <image class="yanhua1-icon" src="http://ru6o93pv8.hn-bkt.clouddn.com/yanhua1.png"></image>
+    <image class="flower-icon" src="http://ru6o93pv8.hn-bkt.clouddn.com/flower.png"></image>
+    永远年轻，永远浪漫
+  </view>
+  <view class="btn-box mb-40">
     <button class="btn" bindtap="reStart">重新开始</button>
   </view>
-  <view wx:if="{{score === 140}}" class="font-48 font-weight-600 color-3 mt-60">永远年轻，永远浪漫</view>
 </view>

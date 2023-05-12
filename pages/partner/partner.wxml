@@ -25,6 +25,7 @@
           <view class="content">
             <text class="course">{{item.time}}</text>
             <image src="http://ru6o93pv8.hn-bkt.clouddn.com/{{item.picture}}.jpg" class="memory-pic" mode="widthFix"></image>
+            <view class="description">{{ item.description }}</view>
           </view>
         </view>
       </block>

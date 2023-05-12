@@ -18,6 +18,10 @@
   width: 100rpx;
   position: relative;
 }
+.playlog-item .description {
+  padding: 15rpx 0 0;
+  font-weight: 600;
+}
 
 /*竖线*/
 .playlog-item .dotline .line {

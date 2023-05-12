@@ -1,38 +1,38 @@
-.container {  
-  display: flex;  
-  justify-content: start;  
-  align-items: center;  
-  flex-direction: column;  
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
   vertical-align: top;
-  height: 100vh; 
+  min-height: 100vh;
   background-image: linear-gradient(
     rgba(160, 32, 240, 0.3),
     rgba(0, 199, 140, 0.4)
-  ); 
-}  
-  
-.game-board {  
-  display: flex;  
-  flex-wrap: wrap;  
+  );
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  width: 570rpx;  
-  height: 570rpx;  
-  margin-top: 20rpx; 
-  justify-content: center; 
-}  
-.game-cell {  
-  width: 100rpx;  
-  height: 100rpx;  
-  position: relative;  
-  background-color: #FFFAF0;
+  width: 570rpx;
+  height: 570rpx;
+  margin-top: 20rpx;
+  justify-content: center;
+}
+.game-cell {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  background-color: #fffaf0;
   margin: 7rpx;
   border-radius: 10rpx;
-}  
+}
 .game-cell-selected {
   animation: bigger 0.2s ease-out;
   animation-iteration-count: 1;
   transform: scale(0.9);
-} 
+}
 @keyframes bigger {
   0% {
     transform: scale(1);
@@ -44,31 +44,32 @@
 .game-chance-wrap {
   display: flex;
   margin-top: 30rpx;
+  margin-bottom: 65rpx;
   flex-direction: row;
 }
 .game-chance {
   margin: 12rpx 30rpx;
   padding: 4rpx;
-  background-color: #F0FFFF; 
+  background-color: #f0ffff;
   box-shadow: 3rpx 4rpx 10rpx 0 rgba(0, 0, 0, 0.2);
 }
 .game-cell-removeed {
-  background-color: #DCDCDC;
-} 
-.game-cell image {  
-  width: 100%;  
-  height: 100%;  
-  border-radius: 10rpx;  
-}  
-.game-cell .highlight {  
-  position: absolute;  
-  top: 0;  
-  left: 0;  
-  width: 100%;  
-  height: 100%;  
-  background-color: rgba(255, 255, 255, 0.5);  
-  border-radius: 10rpx;  
-}  
+  background-color: #dcdcdc;
+}
+.game-cell image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.game-cell .highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10rpx;
+}
 .btn-box {
   margin-top: 40rpx;
 }
@@ -84,4 +85,125 @@
 .socre-font {
   color: aliceblue;
   font-size: 32rpx;
+}
+.success-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #228B22;
+  width: 570rpx;
+  height: 0rpx;
+  border-radius: 25rpx;
+  animation: toshow 5.8s linear forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+  transform: scale(1);
+}
+@keyframes toshow {
+  0% {
+    opacity: 0;
+    position: static;
+    transform: scale(0);
+    height: 0rpx;
+  }
+  5% {
+    opacity: 0.4;
+    transform: scale(1.1);
+    position: static;
+    height: 150rpx;
+  }
+  8% {
+    opacity: 1;
+    transform: scale(1);
+    position: static;
+    height: 150rpx;
+  }
+  95% {
+    opacity: 1;
+    position: static;
+    transform: scale(1);
+    height: 150rpx;
+  }
+  97% {
+    opacity: 0.3;
+    position: static;
+    transform: scale(1);
+    height: 150rpx;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+    height: 0rpx;
+  }
+}
+.yanhua-icon {
+  height: 110rpx;
+  width: 110rpx;
+  position: absolute;
+  left: -20rpx;
+  bottom: -10rpx;
+}
+.yanhua1-icon {
+  height: 160rpx;
+  width: 160rpx;
+  position: absolute;
+  left: 350rpx;
+  bottom: 80rpx;
+}
+.flower-icon {
+  height: 180rpx;
+  width: 180rpx;
+  position: absolute;
+  left: 460rpx;
+  bottom: -35rpx;
+}
+.chidouren-icon {
+  width: 85rpx;
+  position: absolute;
+  left: 18rpx;
+  height: 0rpx;
+  animation: toright 3s linear forwards;
+  animation-delay: 3s;
+  z-index: 1;
+}
+@keyframes toright {
+  0% {
+    left: 18rpx;
+    height: 0rpx;
+  }
+  5% {
+    left: 18rpx;
+    height: 85rpx;
+  }
+  95% {
+    left: 475rpx;
+    height: 85rpx;
+  }
+  100% {
+    left: 475rpx;
+    height: 0rpx;
+  }
+}
+.success-wrap::after {
+  background-color: #228B22;
+  content: '';
+  left: 80rpx;
+  position: absolute;
+  height: 60rpx;
+  animation: tocover 3s linear forwards;
+  animation-delay: 3s;
+}
+@keyframes tocover {
+  0% {
+    width: 0rpx;
+  }
+  7% {
+    width: 0rpx;
+  }
+  93% {
+    width: 400rpx;
+  }
+  100% {
+    width: 400rpx;
+  }
 }
