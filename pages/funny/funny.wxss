@@ -94,8 +94,8 @@
   width: 570rpx;
   height: 0rpx;
   border-radius: 25rpx;
-  animation: toshow 5.8s linear forwards;
-  animation-delay: 0.5s;
+  animation: toshow 4.9s linear forwards;
+  animation-delay: 0.3s;
   opacity: 0;
   transform: scale(1);
 }
@@ -162,7 +162,7 @@
   position: absolute;
   left: 18rpx;
   height: 0rpx;
-  animation: toright 3s linear forwards;
+  animation: toright 2s linear forwards;
   animation-delay: 3s;
   z-index: 1;
 }
@@ -176,11 +176,11 @@
     height: 85rpx;
   }
   95% {
-    left: 475rpx;
+    left: 450rpx;
     height: 85rpx;
   }
   100% {
-    left: 475rpx;
+    left: 450rpx;
     height: 0rpx;
   }
 }
@@ -190,7 +190,7 @@
   left: 80rpx;
   position: absolute;
   height: 60rpx;
-  animation: tocover 3s linear forwards;
+  animation: tocover 2s linear forwards;
   animation-delay: 3s;
 }
 @keyframes tocover {
@@ -201,9 +201,9 @@
     width: 0rpx;
   }
   93% {
-    width: 400rpx;
+    width: 390rpx;
   }
   100% {
-    width: 400rpx;
+    width: 390rpx;
   }
 }
