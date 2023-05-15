@@ -66,6 +66,13 @@ Page({
         iconClass: "shanghai-icon",
         description: "金陵的人海满是疲倦，我身旁的你便是一生...",
       },
+      {
+        time: "2023/05/12",
+        picture: "230514",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "凑满期待，凑出所有的爱...",
+      },
     ],
   },
   onShow() {

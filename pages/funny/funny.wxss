@@ -90,7 +90,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #228B22;
+  background-color: #292421;
   width: 570rpx;
   height: 0rpx;
   border-radius: 25rpx;
@@ -185,7 +185,7 @@
   }
 }
 .success-wrap::after {
-  background-color: #228B22;
+  background-color: #292421;
   content: '';
   left: 80rpx;
   position: absolute;

@@ -55,14 +55,20 @@
 .color-1 {
   color: #a066d3;
 }
-.mt-15 {
-  margin-top: 15rpx;
+.color-2 {
+  color: #c20c0c;
+}
+.color-3 {
+  color: #FFF5EE;
+}
+.color-4 {
+  color: #c20c0c;
 }
 .mt-6 {
   margin-top: 6rpx;
 }
-.mt-60 {
-  margin-top: 60rpx;
+.mt-15 {
+  margin-top: 15rpx;
 }
 .mb-30 {
   margin-bottom: 30rpx;
@@ -70,17 +76,14 @@
 .mb-40 {
   margin-bottom: 40rpx;
 }
+.mt-60 {
+  margin-top: 60rpx;
+}
 .font-42 {
   font-size: 42rpx;
 }
 .font-weight-600 {
   font-weight: 600;
-}
-.color-2 {
-  color: #c20c0c;
-}
-.color-3 {
-  color: #FFF5EE;
 }
 .dalian-icon {
   width: 81rpx;
