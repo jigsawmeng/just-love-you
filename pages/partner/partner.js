@@ -8,7 +8,8 @@ Page({
         picture: "230204",
         address: "shanghai",
         iconClass: "shanghai-icon",
-        description: "扭扭捏捏的南京路，是我们故事的开始...",
+        // description: "扭扭捏捏的南京路，是我们故事的开始...",
+        description: "阳：喜欢一个人又没什么丢人的<br>嘉：那我们在一起吧",
       },
       {
         time: "2023/02/10",
@@ -50,7 +51,8 @@ Page({
         picture: "230408",
         address: "suzhou",
         iconClass: "dalian-icon",
-        description: "金鸡湖边，落日尤其温柔，人间皆是浪漫...",
+        // description: "金鸡湖边，落日尤其温柔，人间皆是浪漫...",
+        description: "那天落日晚霞洒在我们身上，洒在你的眼睛里，洒进我的心里～",
       },
       {
         time: "2023/04/14",

@@ -25,7 +25,7 @@
           <view class="content">
             <text class="course">{{item.time}}</text>
             <image src="http://ru6o93pv8.hn-bkt.clouddn.com/memory/{{item.picture}}.jpg" lazy-load="true" class="memory-pic" mode="widthFix"></image>
-            <view class="description">{{ item.description }}</view>
+            <rich-text class="description" nodes="{{item.description}}"></rich-text>
           </view>
         </view>
       </block>

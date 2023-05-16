@@ -57,13 +57,14 @@ Page({
     const nextDay = this.data.nextDay;
 
     const day1 = this.getDiffDay(new Date(), new Date(loveDay));
-    const day2 = this.getDiffDay1(new Date(), new Date(nextDay));
+    const day2 = this.getDiffDay(new Date(), new Date(nextDay));
     this.setData({
       checked: app.globalData.musicChecked,
       loveDayDistance: day1,
       nextDayDistance: day2,
     });
   },
+  // 向上取整
   getDiffDay(date_1, date_2) {
     let totalDays, diffDate;
     diffDate = Math.abs(date_1 - date_2);
@@ -71,6 +72,7 @@ Page({
     totalDays = Math.ceil(diffDate / (1000 * 3600 * 24));
     return totalDays; // 相差的天数
   },
+  // 向下取整
   getDiffDay1(date_1, date_2) {
     let totalDays, diffDate;
     diffDate = Math.abs(date_1 - date_2);
