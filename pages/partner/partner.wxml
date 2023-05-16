@@ -19,12 +19,12 @@
             <!-- 竖线 -->
             <view class="line"></view>
             <!-- 圆点 -->
-            <image src="http://ru6o93pv8.hn-bkt.clouddn.com/{{item.address}}.png" class="{{ item.iconClass }}" mode="cover"></image>
+            <image src="http://ru6o93pv8.hn-bkt.clouddn.com/address/{{item.address}}.png" class="{{ item.iconClass }}" mode="cover"></image>
             <!-- 时间戳 -->
           </view>
           <view class="content">
             <text class="course">{{item.time}}</text>
-            <image src="http://ru6o93pv8.hn-bkt.clouddn.com/{{item.picture}}.jpg" class="memory-pic" mode="widthFix"></image>
+            <image src="http://ru6o93pv8.hn-bkt.clouddn.com/memory/{{item.picture}}.jpg" lazy-load="true" class="memory-pic" mode="widthFix"></image>
             <view class="description">{{ item.description }}</view>
           </view>
         </view>

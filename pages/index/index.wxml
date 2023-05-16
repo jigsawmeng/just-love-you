@@ -10,7 +10,7 @@
           <text wx:if="{{address}}" class="address">{{address}}</text>
         </view>
         <view style="font-size: 32rpx">{{weatherTemp}}℃   {{weatherText}}</view>
-        <image wx:if="{{weatherIcon}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/{{weatherIcon}}.svg" class='weather-icon'></image>
+        <image wx:if="{{weatherIcon}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/weather/{{weatherIcon}}.svg" class='weather-icon'></image>
         <view class="weather-detail">
           <view class="weather-bar mt-15">
             <view class="weather-box">湿度</view>

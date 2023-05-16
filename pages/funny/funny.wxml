@@ -6,14 +6,14 @@
   <view class="game-board">
     <block wx:for="{{board}}" wx:for-item="item" wx:key="index">
       <view class="game-cell {{item.value === 0 && 'game-cell-removeed'}}" bindtap="tapCell" data-row="{{item.row}}" data-col="{{item.col}}" data-index="{{item.index}}" data-value="{{item.value}}">
-        <image wx:if="{{item.value}}" class="{{selected[0].index === index && 'game-cell-selected'}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/game{{item.value}}.jpg"></image>
+        <image wx:if="{{item.value}}" class="{{selected[0].index === index && 'game-cell-selected'}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/game/game{{item.value}}.jpg"></image>
       </view>
     </block>
   </view>
   <view class="game-chance-wrap">
     <block wx:for="{{chanceBoard}}" wx:for-item="item" wx:key="index">
       <view class="game-cell game-chance {{item === 0 && 'game-cell-removeed'}}" bindtap="chanceCell" data-index="{{index}}" data-value="{{item}}">
-        <image wx:if="{{item}}" class="{{chanceSelected[0].index === index && 'game-cell-selected'}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/game{{item}}.jpg"></image>
+        <image wx:if="{{item}}" class="{{chanceSelected[0].index === index && 'game-cell-selected'}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/game/game{{item}}.jpg"></image>
       </view>
     </block>
   </view>
