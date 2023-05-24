@@ -1,7 +1,7 @@
 <!-- index.wxml -->
 <view class="container">
   <view class="info">
-    <image class="bg-image" src="http://ru6o93pv8.hn-bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230505174407.jpg" mode="cover"></image>
+    <image class="bg-image" src="http://ru6o93pv8.hn-bkt.clouddn.com/backpic.jpg" mode="cover"></image>
     <image src="/image/music.png" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image>
     <view class="weather-wrap">
       <view class="" style="width: 70%">

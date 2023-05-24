@@ -75,6 +75,13 @@ Page({
         iconClass: "dalian-icon",
         description: "凑满期待，凑出所有的爱...",
       },
+      {
+        time: "2023/05/20",
+        picture: "230520",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "承蒙照顾，520~",
+      },
     ],
   },
   onShow() {
