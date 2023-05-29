@@ -82,6 +82,13 @@ Page({
         iconClass: "dalian-icon",
         description: "承蒙照顾，520~",
       },
+      {
+        time: "2023/05/26",
+        picture: "230528",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "每次说再见，都是为了更好的再见...",
+      },
     ],
   },
   onShow() {
