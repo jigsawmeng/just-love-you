@@ -1,7 +1,7 @@
 <!-- index.wxml -->
 <view class="container">
   <view class="info">
-    <image class="bg-image" src="http://ru6o93pv8.hn-bkt.clouddn.com/backpic.jpg" mode="cover"></image>
+    <image class="bg-image" src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/backpic.jpg" mode="cover"></image>
     <image src="/image/music.png" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image>
     <view class="weather-wrap">
       <view class="" style="width: 70%">
@@ -10,7 +10,7 @@
           <text wx:if="{{address}}" class="address">{{address}}</text>
         </view>
         <view style="font-size: 32rpx">{{weatherTemp}}℃   {{weatherText}}</view>
-        <image wx:if="{{weatherIcon}}" src="http://ru6o93pv8.hn-bkt.clouddn.com/weather/{{weatherIcon}}.svg" class='weather-icon'></image>
+        <image wx:if="{{weatherIcon}}" src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/weather/{{weatherIcon}}.svg" class='weather-icon'></image>
         <view class="weather-detail">
           <view class="weather-bar mt-15">
             <view class="weather-box">湿度</view>

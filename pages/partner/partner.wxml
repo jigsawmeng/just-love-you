@@ -1,13 +1,13 @@
 <view class="container">
   <view class="info">
-    <!-- <image class="bg-image" src="http://ru6o93pv8.hn-bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230505174407.jpg" mode="cover"></image> -->
+    <!-- <image class="bg-image" src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230505174407.jpg" mode="cover"></image> -->
     <view class="love-container" hover-class="none" hover-stop-propagation="false">
       <image src="/image/music.png" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image>
     </view>
     <!-- <swiper style="width: 100%" indicator-dots="true" autoplay="true" interval="5000" duration="500">
       <block wx:for="{{memoryList}}" wx:key="time">
         <swiper-item>
-          <image src="http://ru6o93pv8.hn-bkt.clouddn.com/{{item.picture}}.jpg" class="memory-pic" mode="widthFix"></image>
+          <image src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/{{item.picture}}.jpg" class="memory-pic" mode="widthFix"></image>
         </swiper-item>
       </block>
     </swiper> -->
@@ -19,12 +19,12 @@
             <!-- 竖线 -->
             <view class="line"></view>
             <!-- 圆点 -->
-            <image src="http://ru6o93pv8.hn-bkt.clouddn.com/address/{{item.address}}.png" class="{{ item.iconClass }}" mode="cover"></image>
+            <image src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/address/{{item.address}}.png" class="{{ item.iconClass }}" mode="cover"></image>
             <!-- 时间戳 -->
           </view>
           <view class="content">
             <text class="course">{{item.time}}</text>
-            <image src="http://ru6o93pv8.hn-bkt.clouddn.com/memory/{{item.picture}}.jpg" lazy-load="true" class="memory-pic" mode="widthFix"></image>
+            <image src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/memory/{{item.picture}}.jpg" lazy-load="true" class="memory-pic" mode="widthFix"></image>
             <rich-text class="description" nodes="{{item.description}}"></rich-text>
           </view>
         </view>
