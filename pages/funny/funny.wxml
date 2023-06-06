@@ -6,22 +6,22 @@
   <view class="game-board">
     <block wx:for="{{board}}" wx:for-item="item" wx:key="index">
       <view class="game-cell {{item.value === 0 && 'game-cell-removeed'}}" bindtap="tapCell" data-row="{{item.row}}" data-col="{{item.col}}" data-index="{{item.index}}" data-value="{{item.value}}">
-        <image wx:if="{{item.value}}" class="{{selected[0].index === index && 'game-cell-selected'}}" src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/game/game{{item.value}}.jpg"></image>
+        <image wx:if="{{item.value}}" class="{{selected[0].index === index && 'game-cell-selected'}}" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/game/game{{item.value}}.jpg"></image>
       </view>
     </block>
   </view>
   <view class="game-chance-wrap">
     <block wx:for="{{chanceBoard}}" wx:for-item="item" wx:key="index">
       <view class="game-cell game-chance {{item === 0 && 'game-cell-removeed'}}" bindtap="chanceCell" data-index="{{index}}" data-value="{{item}}">
-        <image wx:if="{{item}}" class="{{chanceSelected[0].index === index && 'game-cell-selected'}}" src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/game/game{{item}}.jpg"></image>
+        <image wx:if="{{item}}" class="{{chanceSelected[0].index === index && 'game-cell-selected'}}" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/game/game{{item}}.jpg"></image>
       </view>
     </block>
   </view>
   <view wx:if="{{score === 140}}" class="success-wrap font-42 font-weight-600 color-3">
     <image class="chidouren-icon" src="/image/chidouren.png"></image>
-    <image class="yanhua-icon" src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/yanhua.png"></image>
-    <image class="yanhua1-icon" src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/yanhua1.png"></image>
-    <image class="flower-icon" src="https://just-love-you.oss-cn-shanghai.aliyuncs.com/flower.png"></image>
+    <image class="yanhua-icon" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/yanhua.png"></image>
+    <image class="yanhua1-icon" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/yanhua1.png"></image>
+    <image class="flower-icon" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/flower.png"></image>
     永远年轻，永远浪漫
   </view>
   <view class="btn-box mb-40">
