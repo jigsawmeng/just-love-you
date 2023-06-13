@@ -2,6 +2,9 @@
 App({
   onLaunch: function () {
     console.log("========= App onLoad =========");
+    wx.setKeepScreenOn({
+      keepScreenOn: true,
+    });
     // const tokenPromise = new Promise((resolve, reject) => {
     //   wx.request({
     //     url: "https://api.weixin.qq.com/cgi-bin/token",

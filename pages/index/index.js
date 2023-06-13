@@ -11,7 +11,7 @@ Page({
     nowDay: "",
     loveDay: "2023/02/05",
     loveDayDistance: "",
-    nextDay: "2023/06/09",
+    nextDay: "2023/06/21",
     nextDayDistance: "",
     checked: false, // 背景音乐开始暂停
     latitude: "", // 纬度

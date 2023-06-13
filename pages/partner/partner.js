@@ -89,6 +89,13 @@ Page({
         iconClass: "dalian-icon",
         description: "每次说再见，都是为了更好的再见...",
       },
+      {
+        time: "2023/06/09",
+        picture: "230611",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "被爱才是成年人回到童年的唯一方式...",
+      },
     ],
   },
   onShow() {
