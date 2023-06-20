@@ -11,7 +11,8 @@ Page({
     nowDay: "",
     loveDay: "2023/02/05",
     loveDayDistance: "",
-    nextDay: "2023/06/21",
+    nextDay: "2023/06/20",
+    nextDayRealDistance: "",
     nextDayDistance: "",
     checked: false, // 背景音乐开始暂停
     latitude: "", // 纬度
@@ -19,6 +20,7 @@ Page({
     address: "", // 所在地区
     weatherIcon: "", // 天气图标
     weatherTemp: "", // 温度,默认单位:摄氏度
+    feelsLike: "", // 体感温度,默认单位:摄氏度
     weatherText: "", // 实况天气状况的文字描述
     weatherWindDir: "", // 风向
     weatherWindScale: "", // 风力
@@ -57,7 +59,7 @@ Page({
     const nextDay = this.data.nextDay;
 
     const day1 = this.getDiffDay(new Date(), new Date(loveDay));
-    const day2 = this.getDiffDay(new Date(), new Date(nextDay));
+    const day2 = this.getDiffDay1(new Date(), new Date(nextDay));
     this.setData({
       checked: app.globalData.musicChecked,
       loveDayDistance: day1,
@@ -72,12 +74,15 @@ Page({
     totalDays = Math.ceil(diffDate / (1000 * 3600 * 24));
     return totalDays; // 相差的天数
   },
-  // 向下取整
+  // 向上取整
   getDiffDay1(date_1, date_2) {
     let totalDays, diffDate;
-    diffDate = Math.abs(date_1 - date_2);
-
-    totalDays = Math.floor(diffDate / (1000 * 3600 * 24));
+    diffDate = Math.ceil((date_2 - date_1) / (1000 * 3600 * 24));
+    totalDays = Math.abs(diffDate);
+    totalDays = totalDays > 0 && totalDays < 1 ? 0 : totalDays;
+    this.setData({
+      nextDayRealDistance: diffDate,
+    });
     return totalDays; // 相差的天数
   },
   checkMusic() {
@@ -99,6 +104,7 @@ Page({
         that.setData({
           weatherIcon: res.now.icon,
           weatherTemp: res.now.temp,
+          feelsLike: res.now.feelsLike,
           weatherText: res.now.text,
           weatherWindDir: res.now.windDir,
           weatherWindScale: res.now.windScale,

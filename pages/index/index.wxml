@@ -13,11 +13,13 @@
         <image wx:if="{{weatherIcon}}" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/weather/{{weatherIcon}}.svg" class='weather-icon'></image>
         <view class="weather-detail">
           <view class="weather-bar mt-15">
+            <view class="weather-box">体感</view>
             <view class="weather-box">湿度</view>
             <view class="weather-box">风向</view>
             <view class="weather-box">风力</view>
           </view>
           <view class="weather-bar mt-6">
+            <view class="weather-box font-40 color-1">{{feelsLike}}℃</view>
             <view class="weather-box font-40 color-1">{{weatherHumidity}}%</view>
             <view class="weather-box font-40 color-1">{{weatherWindDir}}</view>
             <view class="weather-box font-40 color-1">{{weatherWindScale}} 级</view>
@@ -37,7 +39,7 @@
       </view>
       <view class="love-wrap" hover-class="none" hover-stop-propagation="false">
         <view class="">
-          <text class="love-day-1">距离下一次见面还有</text>
+          <text class="love-day-1">{{nextDayRealDistance < 0 ?  '距离上一次见面已经过了' : '距离下一次见面还有'}}</text>
           <text class="love-day-2">{{ nextDayDistance }}</text>
           <text class="love-day-1">天</text>
           <view class="love-divide"></view>

@@ -16,7 +16,8 @@
   padding: 15rpx 60rpx;
   text-align: center;
   background-color: rgba(255, 248, 220, 0.65);
-  border-radius: 8rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 3rpx 6rpx -4rpx rgba(0,0,0,0.12), 0 6rpx 16rpx 0 rgba(0,0,0,0.08), 0 9rpx 28rpx 8rpx rgba(0,0,0,0.05);
 }
 .love-day-1 {
   font-size: 34rpx;
