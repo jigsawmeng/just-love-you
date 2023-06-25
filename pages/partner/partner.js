@@ -96,6 +96,15 @@ Page({
         iconClass: "dalian-icon",
         description: "被爱才是成年人回到童年的唯一方式...",
       },
+      {
+        time: "2023/06/20",
+        picture: "230623",
+        // type: "mp4",
+        address: "xiamen",
+        iconClass: "jlu-icon",
+        description:
+          "<label class='text-long'>冰镇汽水的甜，椰汁海风带的咸。一个自然而然的假期，我们一起去海边，向着热气球竭力奔跑，余晖消逝之前都不算终点。被我们丢在身后的时间，关于以后的一切所有的幻想都藏在厦门白城沙滩的海岸线...</label>",
+      },
     ],
   },
   onShow() {

@@ -25,6 +25,7 @@
           <view class="content">
             <text class="course">{{item.time}}</text>
             <image src="https://justloveyou.oss-cn-beijing.aliyuncs.com/memory/{{item.picture}}.jpg" lazy-load="true" class="memory-pic" mode="widthFix"></image>
+            <!-- <video wx:else class="memory-pic" src="http://rwsdvqw4q.bkt.clouddn.com//{{item.picture}}.mp4"></video> -->
             <rich-text class="description" nodes="{{item.description}}"></rich-text>
           </view>
         </view>

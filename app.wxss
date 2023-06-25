@@ -34,9 +34,10 @@
   width: 86rpx;
   height: 86rpx;
   position: fixed;
-  bottom: 30rpx;
-  right: 30rpx;
+  bottom: 24rpx;
+  right: 24rpx;
   z-index: 99;
+  opacity: 0.7;
 }
 
 .circle {

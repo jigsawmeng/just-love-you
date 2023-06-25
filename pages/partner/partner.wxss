@@ -19,7 +19,7 @@
   position: relative;
 }
 .playlog-item .description {
-  padding: 15rpx 0 0;
+  padding: 15rpx 15rpx 0 0;
   font-weight: 600;
 }
 
@@ -103,4 +103,7 @@
 .memory-pic {
   width: 530rpx;
   border-radius: 8rpx;
+}
+.text-long {
+  font-size: 21rpx;
 }
