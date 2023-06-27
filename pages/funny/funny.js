@@ -26,12 +26,13 @@ Page({
     while (singleValue.length > 3) {
       board = this.createBoard();
       singleValue = this.findSingles(board);
+      // console.log(singleValue);
     }
     for (let index = 0; index < 3; index++) {
       if (singleValue[index]) {
         chanceBoard.push(singleValue[index]);
       } else {
-        let value = Math.floor(Math.random() * 10) + 1;
+        let value = Math.floor(Math.random() * 33) + 1;
         chanceBoard.push(value);
       }
     }
@@ -39,10 +40,17 @@ Page({
   },
   createBoard: function () {
     let board = [];
+    let ary = [];
+    for (let i = 0; ary.length < 13; i++) {
+      const item = Math.floor(Math.random() * 33) + 1;
+      if (!ary.includes(item)) {
+        ary.push(item);
+      }
+    }
     for (let i = 0; i < 25; i++) {
       let row = Math.floor(i / 5);
       let col = i % 5;
-      let value = Math.floor(Math.random() * 10) + 1;
+      let value = ary[Math.floor(Math.random() * 12) + 1];
       board.push({ row: row, col: col, value: value, index: i });
     }
     return board;
