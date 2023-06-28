@@ -25,6 +25,7 @@ Page({
     weatherWindDir: "", // 风向
     weatherWindScale: "", // 风力
     weatherHumidity: "", // 相对湿度
+    goldPrice: {},
   },
   onLoad: function () {
     wx.getLocation({
@@ -53,6 +54,7 @@ Page({
         });
       },
     });
+    this.getGoldPrice();
   },
   onShow() {
     const loveDay = this.data.loveDay;
@@ -113,5 +115,21 @@ Page({
       },
     });
     wx.hideLoading();
+  },
+  getGoldPrice() {
+    let that = this;
+    // that.setData({
+    //   goldPrice: { price: "407.05" },
+    // });
+    wx.request({
+      url: `https://api.jisuapi.com/gold/shgold?appkey=4c51a9228d724d14`,
+      success(result) {
+        const res = result.data.result;
+        console.log(result.data.result);
+        that.setData({
+          goldPrice: res[0],
+        });
+      },
+    });
   },
 });

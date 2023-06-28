@@ -65,6 +65,9 @@
 .color-4 {
   color: #c20c0c;
 }
+.color-5 {
+  color: #fffc00;
+}
 .mt-6 {
   margin-top: 6rpx;
 }

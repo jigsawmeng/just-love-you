@@ -25,6 +25,11 @@
             <view class="weather-box font-40 color-1">{{weatherWindScale}} 级</view>
           </view>
         </view>
+        <view wx:if="{{goldPrice.price}}" class="gold-box mt-15">
+          <image src="/image/gold.png" class="gold-icon"></image>
+          实时黄金价格:
+          <text class='gold-text'>{{goldPrice.price}}</text>
+        </view>
       </view>
     </view>
     <view class="" hover-class="none" hover-stop-propagation="false">
