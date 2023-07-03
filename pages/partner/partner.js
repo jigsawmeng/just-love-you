@@ -105,6 +105,13 @@ Page({
         description:
           "<label class='text-long'>冰镇汽水的甜，椰汁海风带的咸。一个自然而然的假期，我们一起去海边，向着热气球竭力奔跑，余晖消逝之前都不算终点。被我们丢在身后的时间，关于以后的一切所有的幻想都藏在厦门白城沙滩的海岸线...</label>",
       },
+      {
+        time: "2023/06/30",
+        picture: "230701",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "想和你一起吹海风~",
+      },
     ],
   },
   onShow() {

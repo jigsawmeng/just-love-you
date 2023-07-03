@@ -11,7 +11,7 @@ Page({
     nowDay: "",
     loveDay: "2023/02/05",
     loveDayDistance: "",
-    nextDay: "2023/06/30",
+    nextDay: "2023/07/07",
     nextDayRealDistance: "",
     nextDayDistance: "",
     checked: false, // 背景音乐开始暂停
@@ -127,7 +127,7 @@ Page({
         const res = result.data.result;
         console.log(result.data.result);
         that.setData({
-          goldPrice: res[0],
+          goldPrice: res[2],
         });
       },
     });
