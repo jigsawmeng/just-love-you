@@ -112,6 +112,13 @@ Page({
         iconClass: "dalian-icon",
         description: "想和你一起吹海风~",
       },
+      {
+        time: "2023/07/07",
+        picture: "230709",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description: "那天边的晚霞，她是在贩卖浪漫~",
+      },
     ],
   },
   onShow() {
