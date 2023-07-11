@@ -1,4 +1,5 @@
 // app.js
+const myaudio = wx.createInnerAudioContext();
 App({
   onLaunch: function () {
     console.log("========= App onLoad =========");
@@ -100,7 +101,13 @@ App({
   },
   onShow: function () {
     console.log("========= APP onShow =========");
-    this.player(wx.getBackgroundAudioManager());
+    // this.player(wx.getBackgroundAudioManager());
+    myaudio.title = "just love you";
+    myaudio.src = "http://music.163.com/song/media/outer/url?id=740530.mp3";
+    myaudio.play();
+    myaudio.onEnded(() => {
+      myaudio.play();
+    });
   },
   player(e) {
     e.title = "just love you";
@@ -113,13 +120,16 @@ App({
   checkMusic() {
     this.musicChecked = !this.musicChecked;
     if (this.musicChecked) {
-      wx.getBackgroundAudioManager().pause();
+      // wx.getBackgroundAudioManager().pause();
+      myaudio.pause();
     } else {
-      this.player(wx.getBackgroundAudioManager());
+      // this.player(wx.getBackgroundAudioManager());
+      myaudio.play();
     }
   },
   onHide() {
-    wx.getBackgroundAudioManager().stop();
+    // wx.getBackgroundAudioManager().stop();
+    myaudio.stop();
   },
   globalData: {
     musicChecked: false,
