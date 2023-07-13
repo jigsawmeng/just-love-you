@@ -2,7 +2,7 @@
   <view class="info">
     <!-- <image class="bg-image" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230505174407.jpg" mode="cover"></image> -->
     <view class="love-container" hover-class="none" hover-stop-propagation="false">
-      <image src="/image/music.png" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image>
+      <image src="/image/music.png" class="music circle {{checked && 'stop'}}}" catchtap="checkMusic"></image>
     </view>
     <!-- <swiper style="width: 100%" indicator-dots="true" autoplay="true" interval="5000" duration="500">
       <block wx:for="{{memoryList}}" wx:key="time">

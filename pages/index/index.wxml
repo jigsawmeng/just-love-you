@@ -2,7 +2,7 @@
 <view class="container">
   <view class="info">
     <image class="bg-image" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/backpic.jpg" mode="cover"></image>
-    <image src="/image/music.png" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image>
+    <image src="/image/music.png" class="music circle {{checked && 'stop'}}" catchtap="checkMusic"></image>
     <view class="weather-wrap">
       <view class="" style="width: 70%">
         <view class="address-wrap">

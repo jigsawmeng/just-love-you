@@ -105,6 +105,7 @@ App({
     myaudio.title = "just love you";
     myaudio.src = "http://music.163.com/song/media/outer/url?id=740530.mp3";
     myaudio.play();
+    this.globalData.musicChecked = false;
     myaudio.onEnded(() => {
       myaudio.play();
     });
@@ -118,8 +119,8 @@ App({
     });
   },
   checkMusic() {
-    this.musicChecked = !this.musicChecked;
-    if (this.musicChecked) {
+    this.globalData.musicChecked = !this.globalData.musicChecked;
+    if (this.globalData.musicChecked) {
       // wx.getBackgroundAudioManager().pause();
       myaudio.pause();
     } else {

@@ -53,6 +53,9 @@
     transform: rotate(359deg);
   }
 }
+.stop {
+  animation-play-state: paused;
+}
 .color-1 {
   color: #a066d3;
 }

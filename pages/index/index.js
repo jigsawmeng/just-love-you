@@ -88,7 +88,7 @@ Page({
     return totalDays; // 相差的天数
   },
   checkMusic() {
-    app.globalData.musicChecked = !app.globalData.musicChecked;
+    // app.globalData.musicChecked = !app.globalData.musicChecked;
     app.checkMusic();
     this.setData({
       checked: !this.data.checked,

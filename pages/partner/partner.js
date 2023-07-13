@@ -128,7 +128,7 @@ Page({
   },
   checkMusic() {
     app.checkMusic();
-    app.globalData.musicChecked = !app.globalData.musicChecked;
+    // app.globalData.musicChecked = !app.globalData.musicChecked;
     this.setData({
       checked: !this.data.checked,
     });
