@@ -92,19 +92,41 @@
 .font-weight-600 {
   font-weight: 600;
 }
+/* .dalian-icon {
+  width: 81rpx;
+  height: 81rpx;
+  position: relative;
+  left: 3rpx;
+  top: -11rpx;
+} */
 .dalian-icon {
+  width: 64rpx;
+  height: 64rpx;
+  position: relative;
+  left: 12rpx;
+  top: -2rpx;
+  border-radius: 32rpx;
+}
+.suzhou-icon {
   width: 81rpx;
   height: 81rpx;
   position: relative;
   left: 3rpx;
   top: -11rpx;
 }
-.shanghai-icon {
+.nanjing-icon {
   width: 66rpx;
   height: 66rpx;
   position: relative;
   left: 11rpx;
   top: -2rpx;
+}
+.shanghai-icon {
+  width: 90rpx;
+  height: 90rpx;
+  position: relative;
+  left: -2rpx;
+  top: -14rpx;
 }
 .jlu-icon {
   width: 66rpx;
