@@ -100,12 +100,12 @@
   top: -11rpx;
 } */
 .dalian-icon {
-  width: 64rpx;
-  height: 64rpx;
+  width: 62rpx;
+  height: 62rpx;
   position: relative;
   left: 12rpx;
   top: -2rpx;
-  border-radius: 32rpx;
+  border-radius: 31rpx;
 }
 .suzhou-icon {
   width: 81rpx;
@@ -126,7 +126,7 @@
   height: 90rpx;
   position: relative;
   left: -2rpx;
-  top: -14rpx;
+  top: -17rpx;
 }
 .jlu-icon {
   width: 66rpx;
