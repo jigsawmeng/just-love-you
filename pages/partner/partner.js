@@ -126,6 +126,13 @@ Page({
         iconClass: "dalian-icon",
         description: "后来烟雨落盛京，一人撑伞两人行...",
       },
+      {
+        time: "2023/07/21",
+        picture: "230723",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        // description: "后来烟雨落盛京，一人撑伞两人行...",
+      },
     ],
   },
   onShow() {

@@ -103,7 +103,7 @@
   width: 62rpx;
   height: 62rpx;
   position: relative;
-  left: 12rpx;
+  left: 13rpx;
   top: -2rpx;
   border-radius: 31rpx;
 }
