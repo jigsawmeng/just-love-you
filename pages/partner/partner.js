@@ -131,7 +131,7 @@ Page({
         picture: "230723",
         address: "dalian",
         iconClass: "dalian-icon",
-        // description: "后来烟雨落盛京，一人撑伞两人行...",
+        description: "时光的一小步，我们的一大步...",
       },
     ],
   },
