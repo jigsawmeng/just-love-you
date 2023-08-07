@@ -133,6 +133,14 @@ Page({
         iconClass: "dalian-icon",
         description: "时光的一小步，我们的一大步...",
       },
+      {
+        time: "2023/08/04",
+        picture: "230806",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description:
+          "和你见面，跟你拥抱，跟你腻歪，是我疲惫生活里的唯一解药...",
+      },
     ],
   },
   onShow() {
