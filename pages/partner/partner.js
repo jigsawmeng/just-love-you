@@ -143,6 +143,12 @@ Page({
       },
     ],
   },
+  onLoad: function () {
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ["shareAppMessage", "shareTimeline"],
+    });
+  },
   onShow() {
     this.setData({
       checked: app.globalData.musicChecked,

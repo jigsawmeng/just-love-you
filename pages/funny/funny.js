@@ -73,6 +73,10 @@ Page({
   },
   onLoad: function () {
     this.initGame();
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ["shareAppMessage", "shareTimeline"],
+    });
   },
   chanceCell(event) {
     let chanceValue = event.currentTarget.dataset;

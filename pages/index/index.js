@@ -28,6 +28,10 @@ Page({
     goldPrice: {},
   },
   onLoad: function () {
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ["shareAppMessage", "shareTimeline"],
+    });
     wx.getLocation({
       type: "wgs84",
       success: (res) => {
