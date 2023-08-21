@@ -71,6 +71,9 @@
 .color-5 {
   color: #fffc00;
 }
+.ml-32 {
+  margin-left: 32rpx;
+}
 .mt-6 {
   margin-top: 6rpx;
 }

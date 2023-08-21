@@ -141,6 +141,14 @@ Page({
         description:
           "和你见面，跟你拥抱，跟你腻歪，是我疲惫生活里的唯一解药...",
       },
+      {
+        time: "2023/08/18",
+        picture: "230818",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description:
+          "Y：<br><label class='ml-32'>看到彩虹的人前路皆是坦途~</label>",
+      },
     ],
   },
   onLoad: function () {
