@@ -149,6 +149,13 @@ Page({
         description:
           "Y：<br><label class='ml-32'>看到彩虹的人前路皆是坦途~</label>",
       },
+      {
+        time: "2023/09/01",
+        picture: "230902",
+        address: "disneyland",
+        iconClass: "dalian-icon",
+        description: "让我们慢慢拥抱，阳光、微风铸就了我们的城堡",
+      },
     ],
   },
   onLoad: function () {
