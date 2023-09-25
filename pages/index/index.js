@@ -11,7 +11,7 @@ Page({
     nowDay: "",
     loveDay: "2023/02/05",
     loveDayDistance: "",
-    nextDay: "2023/09/08",
+    nextDay: "2023/09/28",
     nextDayRealDistance: "",
     nextDayDistance: "",
     checked: false, // 背景音乐开始暂停
@@ -26,6 +26,7 @@ Page({
     weatherWindScale: "", // 风力
     weatherHumidity: "", // 相对湿度
     goldPrice: {},
+    finance: {},
   },
   onLoad: function () {
     wx.showShareMenu({
@@ -59,6 +60,7 @@ Page({
       },
     });
     this.getGoldPrice();
+    // this.getFinance();
   },
   onShow() {
     const loveDay = this.data.loveDay;
@@ -122,9 +124,6 @@ Page({
   },
   getGoldPrice() {
     let that = this;
-    // that.setData({
-    //   goldPrice: { price: "407.05" },
-    // });
     wx.request({
       url: `https://api.jisuapi.com/gold/shgold?appkey=4c51a9228d724d14`,
       success(result) {
@@ -132,6 +131,19 @@ Page({
         console.log(result.data.result);
         that.setData({
           goldPrice: res[2],
+        });
+      },
+    });
+  },
+  getFinance() {
+    let that = this;
+    wx.request({
+      url: `https://apis.tianapi.com/finance/index?key=091078d37cfa4c6ccada5632ad637d25&code=sh000001,hkHSI,sh600519&list=1`,
+      success(result) {
+        const res = result.data.result;
+        console.log(result.data.result);
+        that.setData({
+          finance: res,
         });
       },
     });

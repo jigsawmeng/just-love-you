@@ -52,7 +52,8 @@ Page({
         address: "suzhou",
         iconClass: "suzhou-icon",
         // description: "金鸡湖边，落日尤其温柔，人间皆是浪漫...",
-        description: "那天落日晚霞洒在我们身上，洒在你的眼睛里，洒进我的心里～",
+        description:
+          "<label class='text-long-1'>那天落日晚霞洒在我们身上，洒在你的眼睛里，洒进我的心里～</label>",
       },
       {
         time: "2023/04/14",
@@ -139,7 +140,7 @@ Page({
         address: "dalian",
         iconClass: "dalian-icon",
         description:
-          "和你见面，跟你拥抱，跟你腻歪，是我疲惫生活里的唯一解药...",
+          "<label class='text-long-1'>和你见面，跟你拥抱，跟你腻歪，是我疲惫生活里的唯一解药...</label>",
       },
       {
         time: "2023/08/18",
@@ -155,6 +156,20 @@ Page({
         address: "disneyland",
         iconClass: "dalian-icon",
         description: "让我们慢慢拥抱，阳光、微风铸就了我们的城堡",
+      },
+      {
+        time: "2023/09/08",
+        picture: "230910",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "擦鼻涕的纸，擦鼻涕的纸💕",
+      },
+      {
+        time: "2023/09/22",
+        picture: "230924",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description: "阴天的快乐并不会打折...",
       },
     ],
   },

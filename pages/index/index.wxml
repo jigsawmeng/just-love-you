@@ -44,11 +44,13 @@
       </view>
       <view class="love-wrap" hover-class="none" hover-stop-propagation="false">
         <view class="">
-          <text class="love-day-1">{{nextDayRealDistance < 0 ?  '距离上一次见面已经过了' : '距离下一次见面还有'}}</text>
+          <!-- <text class="love-day-1">{{nextDayRealDistance < 0 ?  '距离上一次见面已经过了' : '距离下一次见面还有'}}</text> -->
+          <text class="love-day-1">{{nextDayRealDistance < 0 ?  '十一假期已经过了' : '距离下一次见面还有'}}</text>
           <text class="love-day-2">{{ nextDayDistance }}</text>
           <text class="love-day-1">天</text>
           <view class="love-divide"></view>
-          <view class="love-day-1">{{nextDay}}</view>
+          <!-- <view class="love-day-1">{{nextDay}}</view> -->
+          <view class="love-day-1">{{nextDay}}  要见家长啦!</view>
         </view>
       </view>
     </view>

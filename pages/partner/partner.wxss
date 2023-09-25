@@ -107,3 +107,7 @@
 .text-long {
   font-size: 21rpx;
 }
+.text-long-1 {
+  font-size: 24rpx;
+}
+
