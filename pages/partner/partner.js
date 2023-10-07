@@ -171,6 +171,13 @@ Page({
         iconClass: "shanghai-icon",
         description: "阴天的快乐并不会打折...",
       },
+      {
+        time: "2023/09/28 见家长啦！",
+        picture: "230929",
+        address: "home-icon",
+        iconClass: "jlu-icon",
+        description: "我吹过你吹过的晚风~",
+      },
     ],
   },
   onLoad: function () {
