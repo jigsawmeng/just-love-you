@@ -178,6 +178,13 @@ Page({
         iconClass: "jlu-icon",
         description: "我吹过你吹过的晚风~",
       },
+      {
+        time: "2023/10/10",
+        picture: "231011",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description: "我们终将战胜它...",
+      },
     ],
   },
   onLoad: function () {
