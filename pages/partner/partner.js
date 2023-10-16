@@ -185,6 +185,13 @@ Page({
         iconClass: "shanghai-icon",
         description: "我们终将战胜它...",
       },
+      {
+        time: "2023/10/13",
+        picture: "231015",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "带着你这份一起跑...",
+      },
     ],
   },
   onLoad: function () {
