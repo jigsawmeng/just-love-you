@@ -192,6 +192,13 @@ Page({
         iconClass: "dalian-icon",
         description: "带着你这份一起跑...",
       },
+      {
+        time: "2023/10/27",
+        picture: "231028",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description: "等到风景都看透，也许你会陪我看细水长流~",
+      },
     ],
   },
   onLoad: function () {
