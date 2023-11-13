@@ -199,6 +199,14 @@ Page({
         iconClass: "shanghai-icon",
         description: "等到风景都看透，也许你会陪我看细水长流~",
       },
+      {
+        time: "2023/11/10",
+        picture: "231111",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description:
+          "<label class='text-long-1'>生活就像一盒巧克力，你永远不知道下一颗是什么味道...</label>",
+      },
     ],
   },
   onLoad: function () {
