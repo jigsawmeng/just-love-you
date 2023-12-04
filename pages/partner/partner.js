@@ -207,6 +207,13 @@ Page({
         description:
           "<label class='text-long-1'>生活就像一盒巧克力，你永远不知道下一颗是什么味道...</label>",
       },
+      {
+        time: "2023/12/01",
+        picture: "231202",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description: "始料未及的幸运，突如其来的惊喜~",
+      },
     ],
   },
   onLoad: function () {
