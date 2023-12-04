@@ -212,7 +212,8 @@ Page({
         picture: "231202",
         address: "shanghai",
         iconClass: "shanghai-icon",
-        description: "始料未及的幸运，突如其来的惊喜~",
+        description:
+          "<label class='text-long-1'>准备一些小小的惊喜，希望给你大大的回忆。在圣诞快要到来的上海，去影院观赏来时的北方明珠~</label>",
       },
     ],
   },
