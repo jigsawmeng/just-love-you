@@ -215,6 +215,13 @@ Page({
         description:
           "<label class='text-long-1'>准备一些小小的惊喜，希望给你大大的回忆。在圣诞快要到来的上海，去影院观赏来时的北方明珠~</label>",
       },
+      {
+        time: "2023/12/22",
+        picture: "231223",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description: "我放下圣诞的曲目，放不下没你的旅途...",
+      },
     ],
   },
   onLoad: function () {
