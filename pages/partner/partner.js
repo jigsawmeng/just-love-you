@@ -222,6 +222,13 @@ Page({
         iconClass: "shanghai-icon",
         description: "我放下圣诞的曲目，放不下没你的旅途...",
       },
+      {
+        time: "2024/01/01",
+        picture: "231231",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description: "2024新的开始，△💍💐",
+      },
     ],
   },
   onLoad: function () {
