@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   text-align: center;
   width: 570rpx;
-  height: 570rpx;
+  height: 558rpx;
   margin-top: 20rpx;
   justify-content: center;
 }
@@ -88,7 +88,7 @@
   color: aliceblue;
   font-size: 32rpx;
 }
-.success-wrap {
+/* .success-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,6 +100,26 @@
   animation-delay: 0.3s;
   opacity: 0;
   transform: scale(1);
+} */
+.success-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000010;
+  width: 570rpx;
+  height: 0rpx;
+  border-radius: 25rpx;
+  animation: toshow 4.9s linear forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  transform: scale(1);
+}
+.success-font {
+  font-size: 70rpx;
+  font-weight: 1000;
+  color:#ffd452;
+  text-shadow: 1px 1px rgb(170, 140, 110);
+  letter-spacing: 1;
 }
 @keyframes toshow {
   0% {
@@ -108,25 +128,25 @@
     transform: scale(0);
     height: 0rpx;
   }
-  5% {
+  6% {
     opacity: 0.4;
     transform: scale(1.1);
     position: static;
     height: 150rpx;
   }
-  8% {
+  12% {
     opacity: 1;
     transform: scale(1);
     position: static;
     height: 150rpx;
   }
-  95% {
+  100% {
     opacity: 1;
     position: static;
     transform: scale(1);
     height: 150rpx;
   }
-  97% {
+  /* 97% {
     opacity: 0.3;
     position: static;
     transform: scale(1);
@@ -136,7 +156,7 @@
     opacity: 0;
     transform: scale(1);
     height: 0rpx;
-  }
+  } */
 }
 .yanhua-icon {
   height: 110rpx;
@@ -150,7 +170,7 @@
   width: 160rpx;
   position: absolute;
   left: 350rpx;
-  bottom: 80rpx;
+  bottom: 100rpx;
 }
 .flower-icon {
   height: 180rpx;
@@ -160,42 +180,43 @@
   bottom: -35rpx;
 }
 .chidouren-icon {
-  width: 85rpx;
+  width: 100rpx;
   position: absolute;
-  left: 18rpx;
+  left: 40rpx;
   height: 0rpx;
   animation: toright 2s linear forwards;
-  animation-delay: 3s;
+  animation-delay: 1s;
   z-index: 1;
 }
 @keyframes toright {
   0% {
-    left: 18rpx;
+    left: 40rpx;
     height: 0rpx;
   }
   5% {
-    left: 18rpx;
-    height: 85rpx;
+    left: 40rpx;
+    height: 100rpx;
   }
   95% {
-    left: 450rpx;
-    height: 85rpx;
+    left: 460rpx;
+    height: 100rpx;
   }
   100% {
-    left: 450rpx;
+    left: 460rpx;
     height: 0rpx;
   }
 }
 .success-wrap::after {
-  background-color: #292421;
+  background-color: #000010;
   content: '';
-  left: 80rpx;
+  right: 80rpx;
   position: absolute;
-  height: 60rpx;
+  height: 95rpx;
   animation: tocover 2s linear forwards;
-  animation-delay: 3s;
+  animation-delay: 1s;
+  width: 420rpx;
 }
-@keyframes tocover {
+/* @keyframes tocover {
   0% {
     width: 0rpx;
   }
@@ -207,5 +228,19 @@
   }
   100% {
     width: 390rpx;
+  }
+} */
+@keyframes tocover {
+  0% {
+    width: 420rpx;
+  }
+  7% {
+    width: 420rpx;
+  }
+  93% {
+    width: 7rpx;
+  }
+  100% {
+    width: 0rpx;
   }
 }

@@ -11,7 +11,7 @@ Page({
     nowDay: "",
     loveDay: "2023/02/05",
     loveDayDistance: "",
-    nextDay: "2024/01/12",
+    nextDay: "2024/02/05",
     nextDayRealDistance: "",
     nextDayDistance: "",
     checked: false, // 背景音乐开始暂停
@@ -66,8 +66,8 @@ Page({
     const loveDay = this.data.loveDay;
     const nextDay = this.data.nextDay;
 
-    const day1 = this.getDiffDay(new Date(), new Date(loveDay));
-    const day2 = this.getDiffDay1(new Date(), new Date(nextDay));
+    const day1 = this.getDiffDay(new Date("2024/02/05"), new Date(loveDay));
+    const day2 = this.getDiffDay1(new Date("2024/02/05"), new Date(nextDay));
     this.setData({
       checked: app.globalData.musicChecked,
       loveDayDistance: day1,

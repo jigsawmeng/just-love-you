@@ -7,6 +7,7 @@
     <block wx:for="{{board}}" wx:for-item="item" wx:key="index">
       <view class="game-cell {{item.value === 0 && 'game-cell-removeed'}}" bindtap="tapCell" data-row="{{item.row}}" data-col="{{item.col}}" data-index="{{item.index}}" data-value="{{item.value}}">
         <image wx:if="{{item.value}}" class="{{selected[0].index === index && 'game-cell-selected'}}" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/game/game{{item.value}}.jpg"></image>
+        <image wx:else src="/image/game_blank/game_blank_{{index+1}}.gif"></image>
       </view>
     </block>
   </view>
@@ -17,12 +18,13 @@
       </view>
     </block>
   </view>
-  <view wx:if="{{score === 140}}" class="success-wrap font-42 font-weight-600 color-3">
+  <view wx:if="{{score === 140}}" class="success-wrap success-font">
     <image class="chidouren-icon" src="/image/chidouren.png"></image>
     <image class="yanhua-icon" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/yanhua.png"></image>
     <image class="yanhua1-icon" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/yanhua1.png"></image>
     <image class="flower-icon" src="https://justloveyou.oss-cn-beijing.aliyuncs.com/flower.png"></image>
-    永远年轻，永远浪漫
+    <!-- 永远年轻，永远浪漫 -->
+    Marry me
   </view>
   <view class="btn-box mb-40">
     <button class="btn" bindtap="reStart">重新开始</button>

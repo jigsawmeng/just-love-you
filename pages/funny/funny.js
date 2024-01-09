@@ -126,7 +126,7 @@ Page({
     }
   },
   tapCell: function (event) {
-    if (this.data.gameOver) {
+    if (this.data.gameOver || !event.currentTarget.dataset.value) {
       return;
     }
     let row = event.currentTarget.dataset.row;
