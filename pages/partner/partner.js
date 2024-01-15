@@ -229,6 +229,13 @@ Page({
         iconClass: "shanghai-icon",
         description: "2024新的开始，△💍💐",
       },
+      {
+        time: "2024/01/12",
+        picture: "240114",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "归期倒计时⏰",
+      },
     ],
   },
   onLoad: function () {
