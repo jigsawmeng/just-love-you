@@ -236,6 +236,14 @@ Page({
         iconClass: "dalian-icon",
         description: "归期倒计时⏰",
       },
+      {
+        time: "2024/01/25",
+        picture: "240126",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description:
+          "<label class='text-long-1'>我想祝你生日快乐，是真的想你余生的每一个日子都很快乐~</label>",
+      },
     ],
   },
   onLoad: function () {
