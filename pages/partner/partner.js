@@ -244,6 +244,14 @@ Page({
         description:
           "<label class='text-long-1'>我想祝你生日快乐，是真的想你余生的每一个日子都很快乐~</label>",
       },
+      {
+        time: "2024/02/05 我求婚啦 🌹",
+        picture: "240205",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description:
+          "<label class='text-long-1'>诗人的情诗我自是不信，我要给你一个浪子的余生~</label>",
+      },
     ],
   },
   onLoad: function () {
