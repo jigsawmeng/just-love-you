@@ -252,6 +252,14 @@ Page({
         description:
           "<label class='text-long-1'>诗人的情诗我自是不信，我要给你一个浪子的余生~</label>",
       },
+      {
+        time: "2024/03/01",
+        picture: "240302",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description:
+          "<label class='text-long'>去了龙华寺在供香袅袅的烟雾里祈福，再到滨江路的海边看看轮渡。把晚霞和落日揉碎了散落在傍晚，在天空的镜子里大笑做鬼脸，我们相见需要上天下地各凭本事，需要日出日落日夜兼程。时间呐是又快又慢，岁月呐是又短又长，未来呐我们相信一定又闪又亮~</label>",
+      },
     ],
   },
   onLoad: function () {
