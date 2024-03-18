@@ -11,7 +11,7 @@ Page({
     nowDay: "",
     loveDay: "2023/02/05",
     loveDayDistance: "",
-    nextDay: "2024/03/15",
+    nextDay: "2024/03/29",
     nextDayRealDistance: "",
     nextDayDistance: "",
     checked: false, // 背景音乐开始暂停

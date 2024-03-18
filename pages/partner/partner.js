@@ -260,6 +260,13 @@ Page({
         description:
           "<label class='text-long'>去了龙华寺在供香袅袅的烟雾里祈福，再到滨江路的海边看看轮渡。把晚霞和落日揉碎了散落在傍晚，在天空的镜子里大笑做鬼脸，我们相见需要上天下地各凭本事，需要日出日落日夜兼程。时间呐是又快又慢，岁月呐是又短又长，未来呐我们相信一定又闪又亮~</label>",
       },
+      {
+        time: "2024/03/15",
+        picture: "240317",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description: "再坚持，坚持一下✊",
+      },
     ],
   },
   onLoad: function () {
