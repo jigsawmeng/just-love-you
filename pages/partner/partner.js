@@ -267,6 +267,14 @@ Page({
         iconClass: "dalian-icon",
         description: "再坚持，坚持一下✊",
       },
+      {
+        time: "2024/03/22",
+        picture: "240324",
+        address: "dalian",
+        iconClass: "dalian-icon",
+        description:
+          "<label class='text-long-1'>在身边才有猕猴桃，哈密瓜，扒皮鱼，辣肉丝🍛</label>",
+      },
     ],
   },
   onLoad: function () {
