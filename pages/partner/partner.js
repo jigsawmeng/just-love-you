@@ -275,6 +275,13 @@ Page({
         description:
           "<label class='text-long-1'>在身边才有猕猴桃，哈密瓜，扒皮鱼，辣肉丝🍛</label>",
       },
+      {
+        time: "2024/04/02 济州岛",
+        picture: "240404",
+        address: "jeju",
+        iconClass: "dalian-icon",
+        description: "第一次出国旅行~",
+      },
     ],
   },
   onLoad: function () {
