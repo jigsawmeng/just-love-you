@@ -282,6 +282,14 @@ Page({
         iconClass: "dalian-icon",
         description: "第一次出国旅行~",
       },
+      {
+        time: "2024/04/30",
+        picture: "240502",
+        address: "shanghai",
+        iconClass: "shanghai-icon",
+        description:
+          "<label class='text-long-1'>年轻人在小酒馆讲述着过去，未来他们是否还会在此处相聚...</label>",
+      },
     ],
   },
   onLoad: function () {
